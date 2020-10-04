@@ -26,7 +26,10 @@ To run the project follow these steps:
 3. In terminal, run `docker-compose up` to start the database.
 4. In terminal, run `docker pull saevar43/saltapi:latest` to ensure you have the latest version of the project.
 5. In Docker Desktop run the saevar43/saltapi image, which should now be local. 
-   Make sure to open the Optional Settings and set Container Name to SaltApi and map port 5000 to port 80.
+   Make sure to open the Optional Settings and set Container Name to SaltApi and map port 5000 to port 80, like so.
+
+   ![How to set name and port][image]
+
 6. In terminal, run `docker network connect dockerpostgres_default SaltApi` to connect the project to the database.
 
 You should now be able to access the project OAS at localhost:5000/swagger.
@@ -36,3 +39,5 @@ Controller unit tests can be run via the Visual Studio Test Explorer.
 
 To do this, in VS, navigate to Test -> Test Explorer. 
 There you can click the double arrow in the top left corner to run all tests.
+
+[image]: ./set-name-and-port.png
