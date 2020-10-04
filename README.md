@@ -10,10 +10,10 @@ See: https://www.docker.com/get-started.
 To run the project follow these steps:
 
 1. Open a terminal of your choice.
-2. In terminal, navigate to the 'dockerpostgres' directory provided.
+2. In terminal, navigate to the 'dockerpostgres' directory provided seperately.
 3. In terminal, run `docker-compose up` to start the database.
 4. In terminal, run `docker pull saevar43/saltapi:latest` to ensure you have the latest version of the project.
-5. In terminal, run `docker run --name SaltApi -it -p 5000:80 saevar43/saltapi` to run the project.
+5. In terminal, run `docker run --name SaltApi -p 5000:80 saevar43/saltapi` to run the project.
 6. In terminal, run `docker network connect dockerpostgres_default SaltApi` to connect the project to the database.
 
 You should now be able to access the project OAS at localhost:5000/swagger.
@@ -22,7 +22,7 @@ You should now be able to access the project OAS at localhost:5000/swagger.
 To run the project follow these steps:
 
 1. Open a terminal of your choice.
-2. In terminal, navigate to the 'dockerpostgres' directory provided.
+2. In terminal, navigate to the 'dockerpostgres' directory provided seperately.
 3. In terminal, run `docker-compose up` to start the database.
 4. In terminal, run `docker pull saevar43/saltapi:latest` to ensure you have the latest version of the project.
 5. In Docker Desktop run the saevar43/saltapi image, which should now be local. 
